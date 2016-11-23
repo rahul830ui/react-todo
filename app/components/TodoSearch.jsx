@@ -3,9 +3,9 @@ var React = require('react');
 
 var TodoSearch = React.createClass({
     handleSearch: function () {
-        var showCompleaed = this.refs.showCompleaed.checked;
+        var showCompleted = this.refs.showCompleaed.checked;
         var searchText = this.refs.searchText.value;
-        this.props.onSeach(showCompleaed, searchText);
+        this.props.onSearch(showCompleted, searchText);
 
     },
     render: function () {
